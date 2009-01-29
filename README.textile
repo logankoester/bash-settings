@@ -1,6 +1,7 @@
 An organized and documented collection of bash enhancements.
 
 h2. Features (from coolest to lamest)
+
 * git completion and aliases
 * Setup script for bash profile management
 * All-inclusive PATH
