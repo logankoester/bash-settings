@@ -1,0 +1,37 @@
+#!/usr/bin/env bash
+
+# Create a backup of ~/.bashrc and ~/.inputrc then overwrite them
+# pointing to a specified profile
+
+if [[ $# -lt 1 ]] ; then
+ echo "Usage: setup <bash profile> [<input profile>]"
+ echo
+ echo "Bash profiles:" `find *.sh`
+ echo "Input profiles:" `find *inputrc*`
+ exit
+fi
+
+# Set up .bashrc
+
+# Back up the old one
+bashrc_backup="`pwd`/bashrc.backup"
+echo "~/.bashrc will be backed up to $bashrc_backup"
+cp -i ~/.bashrc $bashrc_backup
+echo
+# Install ours
+echo "Installing profile '$1' for `whoami`..."
+echo ". `pwd`/$1" > ~/.bashrc
+
+echo
+# Set up .inputrc
+
+if [[ $2 ]]; then
+	# Back up the old one
+	inputrc_backup="`pwd`/inputrc.backup"
+	echo "~/.inputrc will be backed up to $inputrc_backup"
+	cp -i ~/.inputrc $inputrc_backup
+	echo
+	# Install ours
+	echo "Installing input profile '$2'"
+	cp $2 ~/.inputrc
+fi

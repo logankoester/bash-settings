@@ -1,0 +1,34 @@
+An organized and documented collection of bash enhancements.
+
+h2. Features (from coolest to lamest)
+* git completion and aliases
+* Setup script for bash profile management
+* All-inclusive PATH
+* Search bash history with up/down arrows
+* Ruby on Rails aliases
+* 3 colored prompts
+* grep and ls colors on by default
+* xterm title support
+* bash_completion enabled
+
+h2. How to install
+
+# Clone this repo to your home directory using git
+  	<pre>git clone git://github.com/logankoester/bash-settings.git ~/.bash</pre>
+  	
+# Change to your clone directory
+  	<pre>cd ~/.bash</pre>
+  	
+# Run ./setup for a list of available bash-settings profiles
+  
+# Choose a profile
+  	<pre>./setup logankoester.sh logankoester-inputrc</pre>
+  
+# Reload the shell to activate your chosen profile
+
+h2. Directory structure
+
+| /*.sh | Particular configuration (my-server.sh, my-macbook.sh etc.) |
+| /common | Environment-independant settings and aliases |
+| /desktop | Settings relevant to Mac OS X desktop computers |
+| /server | Settings relevant to servers (mostly Linux-related) |

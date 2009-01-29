@@ -5,6 +5,7 @@ alias ls='ls $LS_OPTIONS'
 alias ll='ls $LS_OPTIONS -lh'
 alias l='ls $LS_OPTIONS -lhA'
 alias l?="l | g? \$1"
+alias lld='ls -lUd */' # Just list directories
 
 alias ..='cd ..'
 alias cd..='cd ..'
@@ -16,3 +17,8 @@ alias rake?="rake -T | g? \$1"
 alias gem?="gem list | g? \$1"
 
 alias mgem="cd \$GEMS; mate \$1"
+
+alias g='gedit'
+
+# Make and change to a directory
+md () { mkdir -p "$1" && cd "$1"; }
