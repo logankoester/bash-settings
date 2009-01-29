@@ -1,4 +1,51 @@
-An organized and documented collection of bash enhancements.
+h2. Cheat Sheets
+
+h3. General
+
+|_. Alias |._ Function |
+| dir | Same as ls |
+| l, vdir | ls (long format) |
+| g? | grep |
+| l? <query> | search ls output |
+| lld | ls (directories only) |
+| cd.. or just .. | cd up one level |
+| tgz | tar -cvzf |
+| zxvf | tar zxvf |
+| g | gedit |
+| md <dir> | make a directory and enter it |
+
+h3. Ruby / Rails
+
+|_. Alias |._ Function |
+| rake? <query> | search rake tasks |
+| gem? <query> | search gem list |
+| sc | script/console |
+| sg | script/generate |
+| ss | script/server |
+| sp | script/plugin |
+
+h3. git
+
+|_. Alias |._ Function |
+| gs | git status |
+| ga | git add |
+| gc | git commit -m |
+| gp | git pull $* && git push $* |
+| gull | git pull |
+| gush | git push |
+| gsh | git show |
+| gl | git log |
+| gb | git branch |
+| gco | git checkout |
+| gd | git diff |
+| gd1 | echo "git diff HEAD";  git diff HEAD |
+| gd2 | git diff HEAD^"; git diff HEAD^ |
+| grmall | gs | grep 'deleted:' | awk '{print \$3}' | xargs git rm -f |
+| gf | git svn fetch |
+| gfr | git svn fetch && git svn rebase |
+| gdc | git svn dcommit |
+| gnc | git svn fetch && git svn rebase && git svn dcommit |
+| gcn | git svn fetch && git svn rebase && git svn dcommit |
 
 h2. Features (from coolest to lamest)
 
@@ -22,10 +69,3 @@ h2. How to install
 # Choose a profile
   	<pre>./setup logankoester.sh logankoester-inputrc</pre>
 # Reload the shell to activate your chosen profile
-
-h2. Directory structure
-
-| /*.sh | Particular configuration (my-server.sh, my-macbook.sh etc.) |
-| /common | Environment-independant settings and aliases |
-| /desktop | Settings relevant to Mac OS X desktop computers |
-| /server | Settings relevant to servers (mostly Linux-related) |
