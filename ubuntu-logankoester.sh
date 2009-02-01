@@ -18,12 +18,10 @@ export HISTCONTROL=ignoreboth
 . $dir/common/color-prompt.sh
 
 # Now what should the prompt look like?
-if [ "$color_prompt" = yes ]; then
-    PS1='\[\033[01;34m\]\w\[\033[00m\]> '
-else
-    PS1='\w> '
-fi
-
+# http://logankoester.tumblr.com/post/3854533/a-bash-prompt-that-doesnt-suck
+# (looks best with a dark theme)
+PS1='\[\e[35m\][\[\e[1;35m\]\h\[\e[0;35m\]::\[\e[1;34m\]\W\[\e[0;35m\]@\[\e[1;30m\]\t\[\e[0;35m\]]\[\e[0m\]>'
+    
 # Load xterm-specific configuration in case we're in an xterm
 . $dir/common/xterm.sh
 # ...fat chance!
