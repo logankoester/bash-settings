@@ -9,11 +9,13 @@ h2. How to install
   	<pre>./setup logankoester.sh logankoester-inputrc</pre>
 # Reload the shell to activate your chosen profile
 
-h2. Features (from coolest to lamest)
+h2. Features
 
 * git completion and aliases
 * Setup script for bash profile management
+* "exclip" executes the contents of the clipboard
 * All-inclusive PATH
+* Case-insensitive tab completion
 * Search bash history with up/down arrows
 * Ruby on Rails aliases
 * 3 colored prompts
@@ -36,6 +38,8 @@ h3. General
 | zxvf | tar zxvf |
 | g | gedit |
 | md <dir> | make a directory and enter it |
+| exclip | execute the contents of the clipboard |
+| record <logfile>| record a bash session to a file (alias for script)|
 
 h3. Ruby / Rails
 

@@ -22,3 +22,10 @@ alias g='gedit'
 
 # Make and change to a directory
 md () { mkdir -p "$1" && cd "$1"; }
+
+# Record a bash session
+alias record="script $1"
+
+# Execute contents of the clipboard (be careful)
+# Requires xclip ("sudo apt-get install xclip" on Ubuntu)
+alias exclip="`xclip -o`"
