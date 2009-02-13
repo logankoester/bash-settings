@@ -35,3 +35,8 @@ if [[ $2 ]]; then
 	echo "Installing input profile '$2'"
 	cp $2 ~/.inputrc
 fi
+
+# Create a bash.me file for settings you don't want to track
+# such as environment variables and personal aliases (your
+# email address for example)
+touch ~/.bash_me

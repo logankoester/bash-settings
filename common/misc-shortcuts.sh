@@ -28,4 +28,7 @@ alias record="script $1"
 
 # Execute contents of the clipboard (be careful)
 # Requires xclip ("sudo apt-get install xclip" on Ubuntu)
-alias exclip="`xclip -o`"
+# alias exclip="`xclip -o`"
+
+# Alias alpine to just pine (mail client)
+alias pine=alpine
