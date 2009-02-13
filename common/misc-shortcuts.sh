@@ -32,3 +32,5 @@ alias record="script $1"
 
 # Alias alpine to just pine (mail client)
 alias pine=alpine
+
+alias claer=clear
