@@ -34,3 +34,9 @@ alias record="script $1"
 alias pine=alpine
 
 alias claer=clear
+
+# Search running processes
+alias 'ps?'='ps ax | grep '
+
+# Which distro are we running?
+alias 'distro?'='cat /etc/issue | head -n 1'
