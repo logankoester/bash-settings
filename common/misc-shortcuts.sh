@@ -40,3 +40,6 @@ alias 'ps?'='ps ax | grep '
 
 # Which distro are we running?
 alias 'distro?'='cat /etc/issue | head -n 1'
+
+# Common typo
+alias 'xit'='exit'
