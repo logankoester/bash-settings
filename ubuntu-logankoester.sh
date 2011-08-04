@@ -20,7 +20,7 @@ export HISTCONTROL=ignoreboth
 # Now what should the prompt look like?
 # http://logankoester.tumblr.com/post/3854533/a-bash-prompt-that-doesnt-suck
 # (looks best with a dark theme)
-PS1='\[\e[35m\][\[\e[1;35m\]\h\[\e[0;35m\]::\[\e[1;34m\]\W\[\e[0;35m\]@\[\e[1;30m\]\t\[\e[0;35m\]]\[\e[0m\]>'
+PS1='\[\e[35m\][\[\e[1;35m\]\h\[\e[0;35m\]::\[\e[1;34m\]\W\[\e[0;35m\]>'
     
 # Load xterm-specific configuration in case we're in an xterm
 . $dir/common/xterm.sh
@@ -50,9 +50,6 @@ export LS_OPTIONS='--color=auto'
 
 # Set aliases for grep, ls, cd, tar, rake, and gem
 . $dir/common/misc-shortcuts.sh
-
-# Unset the 'mgem' alias, which is for Macs with Textmate
-alias mgem='mgem'
 
 # Enable git bash completion and shortcuts
 . $dir/common/git.sh

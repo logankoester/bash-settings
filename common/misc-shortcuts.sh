@@ -43,3 +43,6 @@ alias 'distro?'='cat /etc/issue | head -n 1'
 
 # Common typo
 alias 'xit'='exit'
+
+# Lock the screen at the end of the day
+alias goodnight='gnome-screensaver-command -l'
